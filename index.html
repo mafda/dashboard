@@ -5,8 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <script src="main.js"></script>
-
   <title>Document</title>
 </head>
 
@@ -29,8 +27,19 @@
     </aside>
 
     <div class="main-header">
-      <div class="main-header__heading">Hello User</div>
-      <div class="main-header__updates">Recent Items</div>
+      <form name="event">
+        <input type="text" id="ftitle" value="Add title">
+        <input type="submit" id="fsubmit" value="Save"><br>
+        <input type="text" id="fdescription" value="Add description"><br>
+        <input type="text" id="flocation" value="Add location"><br>
+        <input type="date" id="fdate">
+        <input type="checkbox" id="fallday" onchange="form_display_hour()">
+        <label for="fallday">All day</label><br>
+        <div id="fhourdiv">
+          <input type="time" id="fstart" onchange="form_validate_hour()">
+          <input type="time" id="fend" onchange="form_validate_hour()">
+        </div>
+      </form>
     </div>
 
     <footer class="footer">
@@ -38,7 +47,7 @@
       <div class="footer__signature">Made with love by pure genius</div>
     </footer>
   </div>
-
+  <script src="main.js"></script>
 </body>
 
 </html>
