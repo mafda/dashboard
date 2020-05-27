@@ -11,34 +11,35 @@ form input {
   padding: 0 24px;
 }
 
-.main-header .main-title form {
+.main-header .main-form form {
 	width: 100%;
 	max-width: 450px;
 }
 
-.main-header .main-title form input {
+.main-header .main-form form input {
 	margin-top: 8px;
 }
 
-.main-header .main-title form .input-group {
+.main-header .main-form form .input-group {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.main-header .main-title form .input-group input + input {
+.main-header .main-form form .input-group input + input {
 	margin-right: 8px;
 }
 
-.main-header .main-title form .input-group .all_day{
+.main-header .main-form form .input-group .all_day{
   width: 120px;
   height: 50px;
   text-align: right;
   padding: 18px 0;
   margin-top: 8px;
+  color: #a6a6a6;
 }
 
-.main-header .main-title form .input-group .checkbox {
+.main-header .main-form form .input-group .checkbox {
   width: 60px;
   height: 30px;
   color: #a6a6a6;
@@ -47,11 +48,11 @@ form input {
   margin-left: 10px;
 }
 
-.main-header .main-title form .input-group .hour {
+.main-header .main-form form .input-group .hour {
   width: 219px;
 }
 
-.main-header .main-title form .button {
+.main-header .main-form form .button {
   width: 100%;
   height: 60px;
   background: #3ba8d4;
@@ -59,7 +60,7 @@ form input {
   border-radius: 10px;
   color: #FFF;
   font-weight: 700;
-  margin: 30px 0 10px 0;
+  margin: 30px 0 20px 0;
   display: inline-block;
   text-align: center;
   text-decoration: none;
