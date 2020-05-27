@@ -42,25 +42,34 @@
         <div class="main-title">
           <h1>New Event</h1>
           <form name="event">
-            <input type="text" id="ftitle" value="Add title">
-            <input type="text" id="fdescription" value="Add description"><br>
-            <input type="text" id="flocation" value="Add location"><br>
-            <input type="date" id="fdate">
-            <input type="checkbox" id="fallday" onchange="form_display_hour()">
-            <label for="fallday">All day</label><br>
-            <div id="fhourdiv">
-              <input type="time" id="fstart" onchange="form_validate_hour()">
-              <input type="time" id="fend" onchange="form_validate_hour()">
+            <input type="text" id="ftitle" placeholder="Add title">
+            <input type="text" id="fdescription" placeholder="Add description">
+            <input type="text" id="flocation" placeholder="Add location">
+
+            <div class="input-group">
+              <input type="date" id="fdate">
+              <label for="fallday" class="all_day">All day:</label>
+              <input type="checkbox" class="checkbox" id="fallday" onchange="form_display_hour()">
             </div>
-            <input type="submit" id="fsubmit" value="Save"><br>
+
+            <div class="input-group">
+              <div id="fhourdiv">
+                <input type="time" id="fstart" class="hour" onchange="form_validate_hour()">
+                <input type="time" id="fend" class="hour" onchange="form_validate_hour()">
+              </div>
+            </div>
+
+            <input type="submit" id="fsubmit" value="Save" class="button">
           </form>
         </div>
       </div>
     </main>
 
     <footer class="footer">
-      <div class="footer_sign">made with <span class="fas fa-heart"></span> by mafda</div>
+      <div class="footer_sign">made with <span class="fas fa-heart"></span> by <a href="https://mafda.github.io/"
+          target="blank">mafda</a></div>
     </footer>
+
   </div>
 
   <script src="main.js"></script>

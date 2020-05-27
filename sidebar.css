@@ -44,7 +44,8 @@
   position: relative;
   display: inline-block;
   width: 100%;
-  height: 4em;
+  height: 3em;
+  color: #394951;
 }
 
 .sidebar-list-item em {
@@ -64,7 +65,7 @@
   left: 0;
   display: inline-block;
   width: 4em;
-  height: 4em;
+  height: 3em;
 }
 
 .sidebar-list-item > i::before {
