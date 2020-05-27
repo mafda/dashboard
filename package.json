@@ -1,0 +1,17 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "Dashboard challenge for Mosyle",
+  "scripts": {
+    "start": "serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mafda/dashboard.git"
+  },
+  "author": "ma. fernanda rodríguez r.",
+  "license": "MIT",
+  "dependencies": {
+    "serve": "^11.3.1"
+  }
+}
