@@ -15,29 +15,29 @@
 </head>
 
 <body>
+  <div class="layout">
 
-  <div class="grid-container">
-    <div class="menu-icon">
-      <i class="fas fa-bars header__menu"></i>
+    <a class="header" href="#0">
+      <i class="fa fa-bars"></i>
+      <div class="header-user"><i class="fas fa-user-circle icon"></i>Hello John Dee</div>
+    </a>
+
+    <div class="sidebar">
+      <ul>
+        <li> <a class="sidebar-list-item" href="#0"> <i class="fas fa-home icon"></i><em>Dashboard</em></a></li>
+        <li> <a class="sidebar-list-item" href="#0"> <i class="fas fa-user icon"></i><em>Users</em></a></li>
+        <li> <a class="sidebar-list-item" href="#0"> <i class="fas fa-tasks icon"></i><em>Projects</em></a></li>
+        <li> <a class="sidebar-list-item active" href="#0"> <i class="fas fa-calendar icon"></i><em>Events</em></a>
+        </li>
+        <li> <a class="sidebar-list-item" href="#0"> <i class="fas fa-toolbox icon"></i><em>Preferences</em></a>
+        </li>
+        <li> <a class="sidebar-list-item" href="#0"> <i class="fas fa-comments icon"></i><em>Feedback</em></a></li>
+        <li> <a class="sidebar-list-item" href="#0"> <i class="fas fa-lightbulb icon"></i><em>Suggestions</em></a>
+        </li>
+      </ul>
     </div>
 
-    <header class="header">
-      <div class="header_user"><span class="fas fa-user-circle icon"></span>Hello John Dee</div>
-    </header>
-
-    <aside class="sidenav">
-      <ul class="sidenav__list">
-        <li class="sidenav__list-item"><span class="fas fa-home icon"></span>Dashboard</li>
-        <li class="sidenav__list-item"><span class="fas fa-user icon"></span>Users</li>
-        <li class="sidenav__list-item"><span class="fas fa-tasks icon"></span>Projects</li>
-        <li class="sidenav__list-item active"><span class="fas fa-calendar icon"></span>Events</li>
-        <li class="sidenav__list-item"><span class="fas fa-toolbox icon"></span>Preferences</li>
-        <li class="sidenav__list-item"><span class="fas fa-comments icon"></span>Feedback</li>
-        <li class="sidenav__list-item"><span class="fas fa-lightbulb icon"></span>Suggestions</li>
-      </ul>
-    </aside>
-
-    <main class="main">
+    <main class="content">
       <div class="main-header">
         <div class="main-title">
           <h1>New Event</h1>
