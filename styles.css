@@ -1,77 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
 
-* {
+body {
+  font: 400 14px Roboto, sans-serif;
+  background: #f6f4fc;
+  -webkit-font-smoothing: antialiased;
   margin: 0;
   padding: 0;
   outline: 0;
   box-sizing: border-box;
 }
 
-body {
-  font: 400 14px Roboto, sans-serif;
-  background: #f6f4fc;
-  -webkit-font-smoothing: antialiased;
+em {
+  font-style: normal;
 }
 
-/* Assign grid instructions to our parent grid container, mobile-first (hide the sidenav) */
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 50px 1fr 50px;
-  grid-template-areas:
-    'header'
-    'main'
-    'footer';
-  height: 100vh;
-}
+a {
+  text-decoration: none;
+  color: inherit;
+} 
 
-.menu-icon {
-  position: fixed; /* Needs to stay visible for all mobile scrolling */
-  display: flex;
-  top: 5px;
-  left: 10px;
-  align-items: center;
-  justify-content: center;
-  background-color: #DADAE3;
-  border-radius: 50%;
-  z-index: 1;
-  cursor: pointer;
-  padding: 12px;
-}
-
-/* Give every child element its grid name */
-.header {
-  grid-area: header;
+.layout {
   display: flex;
   align-items: center;
   justify-content: right;
   padding: 0 16px;
   background-color: #f6f4fc;
-  border-bottom: 1px solid #3ba8d4;
   margin: 0 20px;
 }
 
-.header_user {
-  font-size: 1.2em;
-  color: #3ba8d4;
-  float: left;
-}
-
-.icon{
-  padding-right: 10px;
-}
-
-.main {
-  grid-area: main;
+.content {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: top;
+  flex: 1;
+  margin: 5.5em 0;
+  width: 100%;
 }
 
 .main-header {
   background-color: #fefefe;
   border-radius: 40px;
-  margin: 20px;
   padding: 20px;
   width: 100%;
 	max-width: 650px;
@@ -94,17 +62,20 @@ body {
 }
 
 .footer {
-  grid-area: footer;
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  padding: 0 16px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4em;
   background-color: #f6f4fc;
   border-top: 1px solid #b3b3b3;
-  margin: 0 10px;
 }
 
 .footer_sign {
+  position: absolute;
+  top: 50%;
+  right: 1em;
+  transform: translateY(-50%);
   font-size: 14px;
   color: #b3b3b3;
 }
@@ -114,20 +85,26 @@ body {
   text-decoration: none;
 }
 
-/* Non-mobile styles, 750px breakpoint */
-@media only screen and (min-width: 46.875em) {
-  /* Show the sidenav */
-  .grid-container {
-    grid-template-columns: 240px 1fr;
-    grid-template-areas:
-      "sidenav header"
-      "sidenav main"
-      "sidenav footer";
-  }
+.header {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4em;
+  background-color: #f6f4fc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5em;
+  border-bottom: 1px solid #3ba8d4;
+}
 
-  /* .main-header {
-    margin: 60px 150px;
-    padding: 20px;
-  } */
+.header-user {
+  font-size: 1.2em;
+  color: #3ba8d4;
+}
 
+.header-user > i {
+  padding-right: 10px;
 }
