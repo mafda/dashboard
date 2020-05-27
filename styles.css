@@ -54,6 +54,7 @@ body {
 .header_user {
   font-size: 1.2em;
   color: #3ba8d4;
+  float: left;
 }
 
 .icon{
@@ -62,24 +63,34 @@ body {
 
 .main {
   grid-area: main;
-}
-
-.main-header {
-  background-color: #fefefe;
-  color: slategray;
-  border-radius: 40px;
-  margin: 60px 150px;
-  padding: 20px;
-
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.main-header {
+  background-color: #fefefe;
+  border-radius: 40px;
+  margin: 20px;
+  padding: 20px;
+
+  /* height: 100vh; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+
+  width: 100%;
+	max-width: 550px;
+}
+
 .main-title {
-	justify-content: space-between;
-	align-items: center;
+  width: 100%;
+}
+
+.main-header .main-title h1 {
+	margin: 30px;
+  font-size: 42px;
+  color: #3ba8d4;
 }
 
 .footer {
@@ -98,6 +109,11 @@ body {
   color: #b3b3b3;
 }
 
+.footer_sign span, a {
+  color: #49c1c3;
+  text-decoration: none;
+}
+
 /* Non-mobile styles, 750px breakpoint */
 @media only screen and (min-width: 46.875em) {
   /* Show the sidenav */
@@ -109,7 +125,9 @@ body {
       "sidenav footer";
   }
 
-  .header__search {
-    margin-left: 0;
-  }
+  /* .main-header {
+    margin: 60px 150px;
+    padding: 20px;
+  } */
+
 }
