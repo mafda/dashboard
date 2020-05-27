@@ -1,0 +1,104 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -15em;
+  overflow: hidden;
+  transition: all .3s ease-in;
+  width: 15em;
+  height: 100%;
+  background: #fefefe;
+  font-size: 1.2em;
+}
+
+.active {
+  color:#3ba8d4;
+  background-color: #f5f8fe;
+  border-right: 2px solid #3ba8d4;
+}
+
+.sidebar:hover,
+.sidebar:focus,
+.header:focus + .sidebar,
+.header:hover + .sidebar {
+  left: 0;
+}
+
+.sidebar ul {
+  position: absolute;
+  top: 4em;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 15em;
+}
+
+.sidebar ul li {
+  width: 100%;
+}
+
+.sidebar-list-item {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 3em;
+  color: #394951;
+}
+
+.sidebar-list-item em {
+  position: absolute;
+  top: 50%;
+  left: 4em;
+  transform: translateY(-50%);
+}
+
+.sidebar-list-item:hover {
+  background: #f5f8fe;
+}
+
+.sidebar-list-item > i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 4em;
+  height: 3em;
+}
+
+.sidebar-list-item > i::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 42em) {
+  .content {
+    margin-left: 5em;
+  }
+  
+  .sidebar {
+    width: 4em;
+    left: 0;
+  }
+
+  .sidebar:hover,
+  .sidebar:focus,
+  .header:hover + .sidebar,
+  .header:focus + .sidebar {
+    width: 15em;
+  }
+}
+
+@media (min-width: 68em) {
+  .content {
+    margin-left: 18em;
+  }
+  
+  .sidebar {
+    width: 15em;
+  }
+}

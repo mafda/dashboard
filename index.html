@@ -5,48 +5,75 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="sidebar.css">
+  <link rel="stylesheet" href="form.css">
+
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+  <title>Dashboard | Front End Challenge</title>
 </head>
 
 <body>
+  <div class="layout">
 
-  <div class="grid-container">
-    <header class="header">
-      <div class="header__search">Search...</div>
-      <div class="header__avatar">Your face</div>
-    </header>
+    <a class="header" href="#0">
+      <i class="fa fa-bars"></i>
+      <div class="header-user"><i class="fas fa-user-circle icon"></i>Hello John Dee</div>
+    </a>
 
-    <aside class="sidenav">
-      <ul class="sidenav__list">
-        <li class="sidenav__list-item">Item One</li>
-        <li class="sidenav__list-item">Item Two</li>
-        <li class="sidenav__list-item">Item Three</li>
-        <li class="sidenav__list-item">Item Four</li>
-        <li class="sidenav__list-item">Item Five</li>
+    <div class="sidebar">
+      <ul>
+        <li> <a class="sidebar-list-item" href="#0"> <i class="fas fa-home icon"></i><em>Dashboard</em></a></li>
+        <li> <a class="sidebar-list-item" href="#0"> <i class="fas fa-user icon"></i><em>Users</em></a></li>
+        <li> <a class="sidebar-list-item" href="#0"> <i class="fas fa-tasks icon"></i><em>Projects</em></a></li>
+        <li> <a class="sidebar-list-item active" href="#0"> <i class="fas fa-calendar icon"></i><em>Events</em></a>
+        </li>
+        <li> <a class="sidebar-list-item" href="#0"> <i class="fas fa-toolbox icon"></i><em>Preferences</em></a>
+        </li>
+        <li> <a class="sidebar-list-item" href="#0"> <i class="fas fa-comments icon"></i><em>Feedback</em></a></li>
+        <li> <a class="sidebar-list-item" href="#0"> <i class="fas fa-lightbulb icon"></i><em>Suggestions</em></a>
+        </li>
       </ul>
-    </aside>
-
-    <div class="main-header">
-      <form name="event">
-        <input type="text" id="ftitle" value="Add title">
-        <input type="submit" id="fsubmit" value="Save"><br>
-        <input type="text" id="fdescription" value="Add description"><br>
-        <input type="text" id="flocation" value="Add location"><br>
-        <input type="date" id="fdate">
-        <input type="checkbox" id="fallday" onchange="form_display_hour()">
-        <label for="fallday">All day</label><br>
-        <div id="fhourdiv">
-          <input type="time" id="fstart" onchange="form_validate_hour()">
-          <input type="time" id="fend" onchange="form_validate_hour()">
-        </div>
-      </form>
     </div>
 
+    <main class="content">
+      <div class="main-header">
+        <div class="main-title">
+          <h1>New Event</h1>
+        </div>
+        <div class="main-form">
+          <form name="event">
+            <input type="text" id="ftitle" placeholder="Add title">
+            <input type="text" id="fdescription" placeholder="Add description">
+            <input type="text" id="flocation" placeholder="Add location">
+
+            <div class="input-group">
+              <input type="date" id="fdate">
+              <label for="fallday" class="all_day">All day:</label>
+              <input type="checkbox" class="checkbox" id="fallday" onchange="form_display_hour()">
+            </div>
+
+            <div class="input-group">
+              <div id="fhourdiv">
+                <input type="time" id="fstart" class="hour" onchange="form_validate_hour()">
+                <input type="time" id="fend" class="hour" onchange="form_validate_hour()">
+              </div>
+            </div>
+
+            <input type="submit" id="fsubmit" value="Save" class="button">
+          </form>
+        </div>
+      </div>
+    </main>
+
     <footer class="footer">
-      <div class="footer__copyright">&copy; 2018 MTH</div>
-      <div class="footer__signature">Made with love by pure genius</div>
+      <div class="footer_sign">made with <span class="fas fa-heart"></span> by <a href="https://mafda.github.io/"
+          target="blank">mafda</a></div>
     </footer>
+
   </div>
+
   <script src="main.js"></script>
 </body>
 

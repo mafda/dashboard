@@ -1,75 +1,110 @@
-/* ====== Grid container ====== */
-.grid-container {
-  display: grid;
-  grid-template-columns: 240px 1fr;
-  grid-template-rows: 50px 1fr 50px;
-  grid-template-areas:
-  "sidenav header"
-  "sidenav main"
-  "sidenav footer";
-  height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
+
+body {
+  font: 400 14px Roboto, sans-serif;
+  background: #f6f4fc;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
 }
 
-.header {
-  grid-area: header;
-  background-color: #648ca6;
+em {
+  font-style: normal;
 }
 
-.sidenav {
-  grid-area: sidenav;
-  background-color: #394263;
+a {
+  text-decoration: none;
+  color: inherit;
+} 
+
+.layout {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 0 16px;
+  background-color: #f6f4fc;
+  margin: 0 20px;
 }
 
-.main {
-  grid-area: main;
-  background-color: #8fd4d9;
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  flex: 1;
+  margin: 5.5em 0;
+  width: 100%;
+}
+
+.main-header {
+  background-color: #fefefe;
+  border-radius: 40px;
+  padding: 20px;
+  width: 100%;
+	max-width: 650px;
+}
+
+.main-title {
+  width: 100%;
+}
+
+.main-header .main-title h1 {
+	margin: 30px;
+  font-size: 42px;
+  color: #3ba8d4;
+}
+
+.main-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer {
-  grid-area: footer;
-  background-color: #648ca6;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4em;
+  background-color: #f6f4fc;
+  border-top: 1px solid #b3b3b3;
 }
 
-/* ====== Header - Footer ====== */
-.header, .footer {
+.footer_sign {
+  position: absolute;
+  top: 50%;
+  right: 1em;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.footer_sign span, a {
+  color: #49c1c3;
+  text-decoration: none;
+}
+
+.header {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4em;
+  background-color: #f6f4fc;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 16px;
-  background-color: #648ca6;
+  padding: 1.5em;
+  border-bottom: 1px solid #3ba8d4;
 }
 
-/* ====== Sidenav ====== */
-.sidenav {
-  display: flex; /* Will be hidden on mobile */
-  flex-direction: column;
-  grid-area: sidenav;
-  background-color: #394263;
+.header-user {
+  font-size: 1.2em;
+  color: #3ba8d4;
 }
 
-.sidenav__list {
-  padding: 0;
-  margin-top: 85px;
-  list-style-type: none;
-}
-
-.sidenav__list-item {
-  padding: 20px 20px 20px 40px;
-  color: #ddd;
-}
-
-.sidenav__list-item:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  cursor: pointer;
-}
-
-/* ====== Main-header ====== */
-.main-header {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px;
-  padding: 20px;
-  height: 1fr;
-  background-color: #e3e4e6;
-  color: slategray;
+.header-user > i {
+  padding-right: 10px;
 }
