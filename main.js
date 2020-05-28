@@ -2,7 +2,7 @@ function form_display_hour() {
   if (document.getElementById("fallday").checked) {
     document.getElementById("fhourdiv").style.display = "none";
   } else {
-    document.getElementById("fhourdiv").style.display = "block";
+    document.getElementById("fhourdiv").style.display = "flex";
   }
 }
 

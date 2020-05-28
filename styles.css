@@ -35,6 +35,7 @@ a {
   flex: 1;
   margin: 5.5em 0;
   width: 100%;
+  min-width: 300px;
 }
 
 .main-header {
@@ -42,7 +43,8 @@ a {
   border-radius: 40px;
   padding: 20px;
   width: 100%;
-	max-width: 650px;
+  max-width: 650px;
+  
 }
 
 .main-title {

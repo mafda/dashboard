@@ -13,7 +13,7 @@ form input {
 
 .main-header .main-form form {
 	width: 100%;
-	max-width: 450px;
+  max-width: 450px;
 }
 
 .main-header .main-form form input {
@@ -24,6 +24,20 @@ form input {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.input-hour {
+  height: 50px;
+}
+
+#fhourdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#fhourdiv > input {
+  width: 47%;
 }
 
 .main-header .main-form form .input-group input + input {
@@ -60,7 +74,7 @@ form input {
   border-radius: 10px;
   color: #FFF;
   font-weight: 700;
-  margin: 30px 0 20px 0;
+  margin: 20px 0 15px 0;
   display: inline-block;
   text-align: center;
   text-decoration: none;
