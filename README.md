@@ -1,6 +1,6 @@
 # Dashboard 
 
-Front-end Challenge - Create a responsive dashboard single page without any framework and sliding side nav.
+Front-end Challenge - Responsive single page dashboard with sliding side nav in pure HTML + CSS + JS (without using any development framework/library).
 
 ## 1. Briefing
 
