@@ -1,6 +1,6 @@
 # Dashboard 
 
-Front-end Challenge - Create a responsive dashboard only page without any framework and sliding side nav.
+Front-end Challenge - Create a responsive dashboard single page without any framework and sliding side nav.
 
 ## 1. Briefing
 
@@ -52,3 +52,7 @@ What will be evaluated:
 ## 5. Interactive prototype
 
 Heroku [link](http://mafda-dashboard-mosyle.herokuapp.com/).
+
+---
+
+made with 💙 by [mafda](https://mafda.github.io/) feat. [camiloariza](https://camiloarza.github.io/) 🤖 
