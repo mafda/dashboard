@@ -52,6 +52,7 @@ What will be evaluated:
 ## 5. Interactive prototype
 
 Heroku [link](http://mafda-dashboard-mosyle.herokuapp.com/).
+CodePen [link](https://codepen.io/mafda/pen/MWKyjqj).
 
 ---
 
